@@ -23,6 +23,24 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Class -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              slide1: "url('/images/banner1.png')",
+              slide2: "url('/images/banner2.png')",
+              slide3: "url('/images/banner3.png')",
+              slide4: "url('/images/banner4.png')",
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <!-- Css Custom Class -->
     <style>
       .lato {
@@ -31,7 +49,7 @@
     </style>
   </head>
   <body class="lato">
-    <header class="max-w-7xl mx-auto">
+    <header class="max-w-7xl mx-auto px-4">
       <nav
         class="lg:bg-[#F85559] lg:rounded-full lg:py-4 lg:my-12 my-6 lg:px-10 px-5"
       >
@@ -107,6 +125,232 @@
         </div>
       </nav>
       <!-- Hero Area -->
+      <div class="carousel w-full md:h-[500px] h-[300px]">
+        <div
+          id="slide1"
+          class="carousel-item bg-slide1 bg-cover bg-no-repeat relative w-full rounded-xl"
+        >
+          <!-- Slide Content -->
+          <div
+            class="absolute inset-0 bg-slate-700 bg-opacity-60 rounded-xl"
+          ></div>
+          <div
+            class="md:p-20 px-5 py-10 text-center text-white w-full relative"
+          >
+            <h1 class="lg:text-7xl md:text-6xl text-4xl font-extrabold">
+              Exotic tastes at your <br />
+              doorstep
+            </h1>
+            <p class="md:text-xl text-sm font-medium my-6">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+          <!-- Extra Box -->
+          <div
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+          >
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit1.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit2.png" />
+              <p>Orange</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit3.png" />
+              <p>Mango</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit4.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit5.png" />
+              <p>Mango</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="slide2"
+          class="carousel-item bg-slide2 bg-cover bg-no-repeat relative w-full"
+        >
+          <!-- Slide Content -->
+          <div
+            class="absolute inset-0 bg-slate-700 bg-opacity-60 rounded-xl"
+          ></div>
+          <div
+            class="md:p-20 px-5 py-10 text-center text-white w-full relative"
+          >
+            <h1 class="lg:text-7xl md:text-6xl text-4xl font-extrabold">
+              Exotic tastes at your <br />
+              doorstep
+            </h1>
+            <p class="md:text-xl text-sm font-medium my-6">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+          <!-- Extra Box -->
+          <div
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+          >
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit1.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit2.png" />
+              <p>Orange</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit3.png" />
+              <p>Mango</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit4.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit5.png" />
+              <p>Mango</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="slide3"
+          class="carousel-item bg-slide3 bg-cover bg-no-repeat relative w-full"
+        >
+          <!-- Slide Content -->
+          <div
+            class="absolute inset-0 bg-slate-700 bg-opacity-60 rounded-xl"
+          ></div>
+          <div
+            class="md:p-20 px-5 py-10 text-center text-white w-full relative"
+          >
+            <h1 class="lg:text-7xl md:text-6xl text-4xl font-extrabold">
+              Exotic tastes at your <br />
+              doorstep
+            </h1>
+            <p class="md:text-xl text-sm font-medium my-6">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+          <!-- Extra Box -->
+          <div
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+          >
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit1.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit2.png" />
+              <p>Orange</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit3.png" />
+              <p>Mango</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit4.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit5.png" />
+              <p>Mango</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="slide4"
+          class="carousel-item bg-slide4 bg-cover bg-no-repeat relative w-full"
+        >
+          <!-- Slide Content -->
+          <div
+            class="absolute inset-0 bg-slate-700 bg-opacity-60 rounded-xl"
+          ></div>
+          <div
+            class="md:p-20 px-5 py-10 text-center text-white w-full relative"
+          >
+            <h1 class="lg:text-7xl md:text-6xl text-4xl font-extrabold">
+              Exotic tastes at your <br />
+              doorstep
+            </h1>
+            <p class="md:text-xl text-sm font-medium my-6">
+              We supply highly quality organic products
+            </p>
+            <button
+              class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+            >
+              Shop Now
+            </button>
+          </div>
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+          <!-- Extra Box -->
+          <div
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+          >
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit1.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit2.png" />
+              <p>Orange</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit3.png" />
+              <p>Mango</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit4.png" />
+              <p>Strawberry</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="./images/fruit5.png" />
+              <p>Mango</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   </body>
 </html>
