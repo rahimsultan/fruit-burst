@@ -46,6 +46,16 @@
       .lato {
         font-family: "Lato", sans-serif;
       }
+      .text-style {
+        writing-mode: vertical-rl;
+      }
+      .card-border {
+        border: 1px solid rgba(18, 18, 18, 0.1);
+        border-radius: 8px;
+      }
+      .para {
+        color: rgba(18, 18, 18, 0.6);
+      }
     </style>
   </head>
   <body class="lato">
@@ -158,7 +168,7 @@
           </div>
           <!-- Extra Box -->
           <div
-            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2 shadow-xl"
           >
             <div class="flex flex-col items-center">
               <img src="./images/fruit1.png" />
@@ -214,7 +224,7 @@
           </div>
           <!-- Extra Box -->
           <div
-            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2 shadow-xl"
           >
             <div class="flex flex-col items-center">
               <img src="./images/fruit1.png" />
@@ -270,7 +280,7 @@
           </div>
           <!-- Extra Box -->
           <div
-            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2 shadow-xl"
           >
             <div class="flex flex-col items-center">
               <img src="./images/fruit1.png" />
@@ -326,7 +336,7 @@
           </div>
           <!-- Extra Box -->
           <div
-            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2"
+            class="absolute hidden md:flex gap-10 bg-white rounded-lg p-12 -bottom-[6.5rem] right-1/2 translate-x-1/2 shadow-xl"
           >
             <div class="flex flex-col items-center">
               <img src="./images/fruit1.png" />
@@ -352,5 +362,363 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="mb-36 mt-36 max-w-7xl mx-auto px-4">
+        <div
+          class="flex justify-between items-center md:flex-row flex-col gap-5"
+        >
+          <div class="flex-1">
+            <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+            <p class="font-medium text-[#12121299] mt-6">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex gap-3 md:gap-6 flex-1 justify-end">
+            <div class="flex items-center flex-col">
+              <h4 class="text-5xl font-extrabold">29</h4>
+              <span class="text-[#12121299] font-medium">Days</span>
+            </div>
+            <div class="text-style text-xl mt-5">...</div>
+            <div class="flex items-center flex-col">
+              <h4 class="text-5xl font-extrabold">15</h4>
+              <span class="text-[#12121299] font-medium">Hours</span>
+            </div>
+            <div class="text-style text-xl mt-5">...</div>
+            <div class="flex items-center flex-col">
+              <h4 class="text-5xl font-extrabold">25</h4>
+              <span class="text-[#12121299] font-medium">Minutes</span>
+            </div>
+            <div class="text-style text-xl mt-5">...</div>
+            <div class="flex items-center flex-col">
+              <h4 class="text-5xl font-extrabold">08</h4>
+              <span class="text-[#12121299] font-medium">Seconds</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card Section -->
+        <div
+          class="cards grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-12"
+        >
+          <!-- Card No 01 -->
+          <div
+            class="card-border flex flex-col items-center justify-center p-10"
+          >
+            <div>
+              <img src="./images/fruit6.png" />
+            </div>
+            <h4 class="my-12 text-[#121212] text-2xl font-bold">
+              12.90$ - 18.85$
+            </h4>
+            <p class="para">Apples</p>
+            <!-- Stars -->
+            <div class="flex gap-2 items-center mt-6 mb-8">
+              <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+              <i
+                class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              onclick="my_modal_1.showModal()"
+              class="text-[#F85559] text-[18px] font-bold"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <!-- Popup -->
+                <div
+                  class="flex flex-col gap-6 items-center justify-center p-10"
+                >
+                  <div>
+                    <img src="./images/fruit6.png" />
+                  </div>
+                  <h4 class="text-[#121212] text-4xl font-bold">Apples</h4>
+                  <p class="para text-center">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- Stars -->
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+                    <i
+                      class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                  <button
+                    class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <!-- Card No 02 -->
+          <div
+            class="card-border flex flex-col items-center justify-center p-10"
+          >
+            <div>
+              <img src="./images/fruit7.png" />
+            </div>
+            <h4 class="my-12 text-[#121212] text-2xl font-bold">
+              12.90$ - 18.85$
+            </h4>
+            <p class="para">Orange</p>
+            <!-- Stars -->
+            <div class="flex gap-2 items-center mt-6 mb-8">
+              <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+              <i
+                class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              onclick="my_modal_2.showModal()"
+              class="text-[#F85559] text-[18px] font-bold"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <!-- Popup -->
+                <div
+                  class="flex flex-col gap-6 items-center justify-center p-10"
+                >
+                  <div>
+                    <img src="./images/fruit7.png" />
+                  </div>
+                  <h4 class="text-[#121212] text-4xl font-bold">Orange</h4>
+                  <p class="para text-center">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- Stars -->
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+                    <i
+                      class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                  <button
+                    class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <!-- Card No 03 -->
+          <div
+            class="card-border flex flex-col items-center justify-center p-10"
+          >
+            <div>
+              <img src="./images/fruit8.png" />
+            </div>
+            <h4 class="my-12 text-[#121212] text-2xl font-bold">
+              12.90$ - 18.85$
+            </h4>
+            <p class="para">Red Dragon</p>
+            <!-- Stars -->
+            <div class="flex gap-2 items-center mt-6 mb-8">
+              <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+              <i
+                class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              onclick="my_modal_3.showModal()"
+              class="text-[#F85559] text-[18px] font-bold"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <!-- Popup -->
+                <div
+                  class="flex flex-col gap-6 items-center justify-center p-10"
+                >
+                  <div>
+                    <img src="./images/fruit8.png" />
+                  </div>
+                  <h4 class="text-[#121212] text-4xl font-bold">Red Dragon</h4>
+                  <p class="para text-center">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- Stars -->
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+                    <i
+                      class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                  <button
+                    class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <!-- Card No 04 -->
+          <div
+            class="card-border flex flex-col items-center justify-center p-10"
+          >
+            <div>
+              <img src="./images/fruit9.png" />
+            </div>
+            <h4 class="my-12 text-[#121212] text-2xl font-bold">
+              12.90$ - 18.85$
+            </h4>
+            <p class="para">Banana</p>
+            <!-- Stars -->
+            <div class="flex gap-2 items-center mt-6 mb-8">
+              <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+              <i
+                class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+              <i
+                class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+              ></i>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              onclick="my_modal_4.showModal()"
+              class="text-[#F85559] text-[18px] font-bold"
+            >
+              Details
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <!-- Popup -->
+                <div
+                  class="flex flex-col gap-6 items-center justify-center p-10"
+                >
+                  <div>
+                    <img src="./images/fruit9.png" />
+                  </div>
+                  <h4 class="text-[#121212] text-4xl font-bold">Banana</h4>
+                  <p class="para text-center">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <!-- Stars -->
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid text-2xl fa-star text-[#F85559]"></i>
+                    <i
+                      class="fa-solid text-2xl fa-star-half-stroke text-[#F85559]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                    <i
+                      class="fa-solid text-2xl fa-star text-[rgba(248,85,89,.7)]"
+                    ></i>
+                  </div>
+                </div>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                  <button
+                    class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346]"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <!-- Card End -->
+        </div>
+        <button
+          class="btn bg-[#F85559] text-white border-0 hover:bg-[#f34346] block mt-10 mx-auto"
+        >
+          Shop ALL
+        </button>
+      </section>
+      <!-- Team Section -->
+      <section class="mb-36 max-w-7xl mx-auto px-4"></section>
+    </main>
   </body>
 </html>
